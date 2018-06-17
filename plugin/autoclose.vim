@@ -1,7 +1,7 @@
 " File: autoclose.vim
-" Author: Karl Guertin <grayrest@gr.ayre.st>
-" Version: 1.2
-" Last Modified: June 18, 2009
+" Author: Karl Guertin <grayrest@gr.ayre.st>, Ben Zhang <benzhangniu@gmail.com>
+" Version: 1.2.1
+" Last Modified: June 16, 2018
 " Description: AutoClose, closes what's opened.
 "
 "    This plugin closes opened parenthesis, braces, brackets, quotes as you
@@ -117,7 +117,6 @@ fun! <SID>AutoCloseMappingsOff() " {{{2
         iunmap <C-h>
         iunmap <Del>
         iunmap <Esc>
-        iunmap `
         iunmap {<CR>
         let s:autoclose_mapped = 0
         echo "AutoClose Off"
